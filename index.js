@@ -7,7 +7,7 @@ const passport = require('passport');
 const passportLocal = require('./config/passport-local-stratagy');
 const MongoStore = require('connect-mongo');
 const db = require('./config/mongoose');
-const port = '8000';
+const port = process.env.PORT || '8000';
 
 const app =express();
 app.use(express.urlencoded());
