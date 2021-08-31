@@ -7,8 +7,8 @@ const passport = require('passport');
 const passportLocal = require('./config/passport-local-stratagy');
 const MongoStore = require('connect-mongo');
 const db = require('./config/mongoose');
+const { config } = require('process');
 const port = process.env.PORT || '8000';
-
 const app =express();
 app.use(express.urlencoded());
 app.use(expresslayout);
@@ -32,7 +32,7 @@ app.use(session({
         maxAge: (1000 * 60 * 100)
     },
     store: MongoStore.create({
-        mongoUrl: 'mongodb://localhost/db',
+        mongoUrl: 'mongodb+srv://brain:Rajput2001@cluster0.zlcuv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     
     })
 }));

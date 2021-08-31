@@ -1,6 +1,7 @@
 const { MongoServerError } = require('mongodb');
+const db_path = 'mongodb+srv://brain:Rajput2001@cluster0.zlcuv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/password_generator');
+mongoose.connect(db_path);
 const db = mongoose.connection;
 
 db.on('error',console.error.bind(console,"Error connectiong to mongodb"));
