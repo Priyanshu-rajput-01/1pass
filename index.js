@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
@@ -32,7 +33,7 @@ app.use(session({
         maxAge: (1000 * 60 * 100)
     },
     store: MongoStore.create({
-        mongoUrl: 'mongodb+srv://brain:1234567890@cluster0.ptgjo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+        mongoUrl: process.env.DB,
     
     })
 }));

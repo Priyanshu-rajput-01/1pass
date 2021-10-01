@@ -1,5 +1,5 @@
 const { MongoServerError } = require('mongodb');
-const db_path = 'mongodb+srv://brain:1234567890@cluster0.ptgjo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const db_path = process.env.DB;
 const mongoose = require('mongoose');
 mongoose.connect(db_path);
 const db = mongoose.connection;
