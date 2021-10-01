@@ -32,7 +32,7 @@ app.use(session({
         maxAge: (1000 * 60 * 100)
     },
     store: MongoStore.create({
-        mongoUrl: 'mongodb+srv://brain:Rajput2001@cluster0.zlcuv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+        mongoUrl: 'mongodb+srv://brain:1234567890@cluster0.ptgjo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     
     })
 }));
