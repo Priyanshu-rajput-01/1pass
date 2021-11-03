@@ -1,6 +1,6 @@
 # 1Pass
 
-##Content**
+## Content
 **1. Deployment Link**
 **2. Description**
 **3. Screenshot of the website**
@@ -14,7 +14,7 @@ Site active at -
 ## Screenshort
 ![image](https://github.com/Priyanshu-rajput-01/1pass/blob/master/assets/screenshort.png?raw=true)
  
-## Hpw to contribute
+## How to contribute
  - Step 1. Open a Issue related to the topic you want to contribute (For example - Styling, Code refactoring,updating readme,etc)
  - Step 2. Wait for the confirmation
  - Step 3. Fork the repository 
